@@ -35,6 +35,7 @@ MongoClient.connect(process.env.MONGODB_URL, function (error, client) {
   })
 })
 
+
 const Main = require('./routes/Main')
 app.use('/',Main)
 
@@ -69,3 +70,7 @@ app.use('/macroscan',MacroScan)
 // home.ejs 라우팅
 const Home = require('./routes/Home')
 app.use('/home',Home)
+
+//팀 소개 페이지
+const Team = require('./routes/Team')
+app.use('/team', Team)

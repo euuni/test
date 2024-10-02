@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <div
+      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
+    >
+      <h3 class="my-0 mr-md-auto font-weight-normal">VIRUSWEB</h3>
+      <%- include('nav.html') %>
+      <a href="/login">
+        <button class="btn btn-outline-primary" type="button">로그인</button>
+      </a>
+    </div>
+
+    <title>Team</title>
+    <style>
+      .card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .card {
+        margin: 10px;
+      }
+    </style>
+    <style>
+      .centered-text {
+        text-align: center; /* 텍스트를 가운데 정렬 */
+        margin: 20px 0; /* 위아래 여백 추가 */
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="centered-text">
+        <h1>캐치버그핑</h1>
+      </div>
+      <div class="centered-text">
+        <h3>개발자를 소개합니다~</h3>
+      </div>
+      <div class="subTitle"></div>
+      <!-- Card container with flex-row for horizontal alignment -->
+      <div class="allBox2 d-flex justify-content-center flex-row">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://github.com/euuni/test/blob/main/tae.jpg?raw=true"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-text">
+              김태현
+              <h6>𝐵𝑎𝑐𝑘𝑒𝑛𝑑</h6>
+            </h5>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://github.com/euuni/test/blob/main/m.jpg?raw=true"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-text">
+              신명진
+              <h6>𝐵𝑎𝑐𝑘𝑒𝑛𝑑</h6>
+            </h5>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://github.com/euuni/test/blob/main/ho.jpg?raw=true"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-text">
+              김호준
+              <h6>𝐹𝑟𝑜𝑛𝑡𝑒𝑛𝑑</h6>
+            </h5>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://github.com/euuni/test/blob/main/eui.jpg?raw=true"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-text">
+              최경은
+              <h6>𝐹𝑟𝑜𝑛𝑡𝑒𝑛𝑑</h6>
+            </h5>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://github.com/euuni/test/blob/main/hye.jpg?raw=true"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-text">
+              임혜준
+              <h6>𝐹𝑟𝑜𝑛𝑡𝑒𝑛𝑑</h6>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

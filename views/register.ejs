@@ -46,6 +46,13 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   
   <body class="bg-light">
+    <a class="my-0 mr-md-auto font-weight-normal p-3 text-dark" href="/" style="font-size: 2rem;"><img
+      class="mb-4"
+      src="/public/css/home.png"
+      alt=""
+      width="60"
+      height=""
+  /></a>
         <div class="container">
             <div class="py-5 text-center">
               <img
@@ -57,7 +64,8 @@
               />
               <h1>회원가입</h1>
               </div>
-              <form action="/register" method="POST">
+
+              <div class="row justify-content-center">
               <div class="col-md-8 order-md-1">
                 <h4 class="mb-3">가입정보</h4>
                 <form class="needs-validation" novalidate>
@@ -69,7 +77,6 @@
                         class="form-control"
                         id="firstName"
                         name="성"
-                     
                         required
                       />
                       <div class="invalid-feedback">

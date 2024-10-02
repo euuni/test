@@ -1,40 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First page</title>
-    <link rel="stylesheet" href="/public/css/home.css">
-</head>
-<body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h5 class="my-0 mr-md-auto font-weight-normal">VIRUSWEB</h5>
-        <nav class="my-2 my-md-0 mr-md-3">
-          <a class="p-2 text-dark" href="/home">홈</a>
-          <a class="p-2 text-dark" href="/board">게시판</a>
-        </nav>
-        <a href="/login">
-          <button class="btn btn-outline-primary" type="button">로그인</button>
-        </a>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="/public/css/home.css"/>
+    <div
+      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
+    >
+    <body class="bg-light">
+        <a class="my-0 mr-md-auto font-weight-normal p-0 text-dark" href="/" style="font-size: 1rem;"><img
+          class="mb-4"
+          src="/public/css/home.png"
+          alt=""
+          width="60"
+          height=""
+          /></a>
+          <%- include('nav.html') %>
+          <a href="/login">
+        <button class="btn btn-outline-primary" type="button">로그인</button>
+      </a>
     </div>
-    <div class="slide-container">
+    <div class="slider">
         <div class="slides fade">
-            <img src="/public/images/1.png" alt="광고이미지" style="width:100%">
+            <img src="/public/css/1.png"  alt= "슬라이드1">
         </div>
         <div class="slides fade">
-            <img src="/public/images/2.png" alt="광고이미지2" style="width:100%">
+            <img src="/public/css/2.png"  alt="슬라이드2">
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="content">
+    <!DOCTYPE html>
+<html lang="ko">
+  <head>
+
+    <div class="slider">
+        <div class="slides fade">
+            <img src="/public/css/1.png"  alt= "슬라이드1">
+        </div>
+        <div class="slides fade">
+            <img src="/public/css/2.png"  alt="슬라이드2">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div>
+        <div class="content container">
+            <div class="detect">
+                <h3>DETECT</h3>
+        <div class="card-deck mb-3 text-center d-flex justify-content-center">
+            <form action="/macroscan/macroupload" method="post" enctype="multipart/form-data" onsubmit="return validateFileName()">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">VBA 매크로 탐지</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    $15 <small class="text-muted">/ mo</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>10 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <input
+                    type="file"
+                    name="file"
+                    accept=".doc,.docx,.ppt,.pptx,.xls,.xlsx,.xlsm,.pdf"
+                  />
+                  <input type="submit" style="width: 100pt; height: 40pt;" value="파일제출">
+                </div>
+              </div>
+            </form>
+            
+            <form action="/virusscan/upload" method="post" enctype="multipart/form-data" onsubmit="return validateFileName()">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">진단</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    0$ <small class="text-muted"></small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <input
+                    type="file"
+                    name="file"
+                    accept=".doc,.docx,.ppt,.pptx,.xls,.xlsx,.xlsm,.pdf"
+                    />
+                    <input type="submit" style="width: 100pt; height: 40pt;" value="파일제출">
+                </div>
+              </div>
+            </form>
+      
+        </div>
+    </form>
+</div>
+</div>
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropup">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">사용자 정보</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">파일</a>
+                  <a class="dropdown-item" href="#">계정정보</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+</div>
+    <div class="content container">
         <div class="notice">
             <h3>NOTICE</h3>
             <ul>
                 <li><a href="#">[매크로검사] 파일 검사하러 가기 <span>2024.05.09</span></a></li>
+                <li> <a href="/board">[공지사항] 바이러스 웹 사용방법 <span>2024.04.12</span></a></li>
             </ul>
         </div>
+        <div class="multimedia">
+            <h3>MULTIMEDIA</h3>
+            <video controls width="100%">
+                <source src="/public/css/test.mp4"  type="video/mp4">
+            </video>
+        </div>
     </div>
+    <footer>
+        <div class="container">
+            <p>© 2024 VIRUSWEB. All Rights Reserved.</p>
+        </div>
+    </footer>
     <script src="/public/js/Home.js"></script>
+    <script>
+        let slideIndex = 0;
+        
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 4000); // 4초마다 슬라이드 변경
+        }
+        
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            showSlides(); // 슬라이드 쇼 초기화
+        });
+        </script>
+          <script>
+            function validateFileName() {
+              const fileInput = document.querySelector('input[name="file"]');
+              const fileName = fileInput.value;
+              const disallowedCharacters = /[!@#$%^&*(),?"{}|<>]/; // 특수 기호 거부
+              console.log("파일 이름:", fileName)
+          
+              if (disallowedCharacters.test(fileName)) {
+                alert("파일명에 특수 기호가 포함되어 있습니다.");
+                return false; // 파일 업로드를 중단하기 위해 false를 반환합니다.
+              }
+          
+              return true; // 파일 업로드를 진행할 수 있음을 나타내기 위해 true를 반환합니다.
+            }
+          </script>
 </body>
 </html>
